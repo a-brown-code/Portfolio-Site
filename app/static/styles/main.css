@@ -52,29 +52,28 @@ body {
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
+    height: auto;
     margin-bottom: 50px;
 }
 
 .profile h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: white;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
 }
 
 .profile img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;        
-        padding: 20px;
+    width: 12em;
+    height: 12em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
 }
 
 .profile .profile-picture {
-    margin-bottom: 30px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .banner {
@@ -126,3 +125,23 @@ body {
     width: 80%;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .profile h1 {
+        font-size: 2em;
+    }
+    .profile-picture img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile h1 {
+        font-size: 1.5em;
+    }
+    .profile-picture img {
+        width: 80px;
+        height: 80px;
+    }
+}
