@@ -95,3 +95,34 @@ body {
     font-size: 50px;
     font-weight: 700;
 }
+
+.map-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-container h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.map-container p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.map-container .map {
+    /* height relative to parent */
+    height: 50em;
+    width: 80%;
+}
+

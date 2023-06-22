@@ -36,5 +36,16 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
+
+    <div class="map-container">
+        <!-- Text above the map (cool locations visited) -->
+        <div class="map-text">
+            <h2>Places we've been to</h2>
+            <p>Here are some of the places we've been to. we've been to a lot more places, but these are the ones we remember.</p>
+        </div>
+        <div class="map">
+            {{ iframe|safe }}
+        </div>
+    </div>
 </body>
 </html>
