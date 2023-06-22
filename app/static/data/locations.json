@@ -1,0 +1,46 @@
+{
+  "members": [
+    {
+      "name": "Miguel",
+      "color": "pink",
+      "locations": [
+        {
+          "name": "Los Colomos Forest",
+          "lat":  20.7077,
+          "lon": -103.39,
+          "description": "This is a description of the location"
+        },
+        {
+          "name": "Rivera Maya",
+          "lat":  20.63138,
+          "lon": -87.07305,
+          "description": "This is a description of the location"
+        }
+      ]
+    },
+    {
+      "name": "Aerin",
+      "color": "orange",
+      "locations": [
+        {
+          "name": "Location 3",
+          "lat": 51.49,
+          "lon": -0.08,
+          "description": "This is a description of the location"
+        }
+      ]
+    },
+    {
+      "name": "Julian",
+      "color": "red",
+      "locations": [
+        {
+          "name": "Tokyo Tower",
+          "lat": 35.6586,
+          "lon": 139.7454,
+          "description": "This is a description of the location"
+        }
+      ]
+    }
+  ]
+}
