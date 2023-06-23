@@ -42,6 +42,7 @@
         <h1>{{ title }}</h1>
     </div>
 
+        
     <div class="education-section">
         <h2>Education</h2>
         
@@ -67,6 +68,25 @@
                 {% endfor %}
             </ul>
             {% endfor %}
+        </div>
+    </div>
+
+    <div class="map-container">
+        <div class="map-text">
+            <h2>Places we've been to</h2>
+            <p>Here are some of the places we've been to.</p>
+            <div class="color-boxes">
+                {% for member in members %}
+                    <div class="color-box-container">
+                        <div class="color-box" style="--bg-color: {{ member.color }}">
+                        </div>
+                        <p>{{ member.name }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="map">
+            {{ map|safe }}
         </div>
     </div>
 
