@@ -27,8 +27,10 @@ def index():
                 lat = location['lat']
                 lon = location['lon']
                 location_name = location['name']
-                location_desctiption = location['description']
-                marker = folium.Marker(location=[lat, lon], icon=folium.Icon(color=color, icon='star'), popup=location_desctiption, tooltip=location_name)
+                location_description = location['description']
+                popup_html = f'<style>h3 {{font-family: "Roboto", serif; text-align: center;}} p {{font-family: "Roboto", serif; text-align: center;}}</style> <h3>{location_name}</h3><p>{location_description}</p>'
+                iframe = folium.IFrame(html=popup_html, width=250, height=100)
+                marker = folium.Marker(location=[lat, lon], icon=folium.Icon(color=color, icon='star'), popup=folium.Popup(iframe), tooltip=location_name)
                 marker.add_to(m)
     
     # Set map properties
