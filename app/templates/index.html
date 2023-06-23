@@ -42,6 +42,35 @@
         <h1>{{ title }}</h1>
     </div>
 
+        
+    <div class="education-section">
+        <h2>Education</h2>
+        
+        <div class="member-tabs">
+            {% for member in members_education %}
+              <button id="tab-member-{{ loop.index }}" class="tab-button{% if loop.index == 1 %} active{% endif %}" onclick="openTab('member', '{{ loop.index }}')">
+                {{ member.name }}
+              </button>
+            {% endfor %}
+        </div>
+
+        <div class="timeline-content">
+            {% for member in members_education %}
+            <ul id="content-member-{{ loop.index }}" class="timeline{% if loop.index == 1 %} active{% endif %}">
+                {% for education in member.education %}
+                <li class="timeline-item">
+                    <div class="timeline-date">{{ education.date }}</div>
+                    <div class="timeline-education">
+                        <h3>{{ education.degree }}</h3>
+                        <p>{{ education.institution }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+
     <div class="map-container">
         <div class="map-text">
             <h2>Places we've been to</h2>
@@ -60,6 +89,7 @@
             {{ map|safe }}
         </div>
     </div>
-    
+
+    <script src="{{ url_for('static', filename='scripts/opentab.js') }}"></script> 
 </body>
 </html>

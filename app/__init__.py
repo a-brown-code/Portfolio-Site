@@ -8,6 +8,13 @@ from pathlib import Path
 load_dotenv()
 app = Flask(__name__)
 
+def load_member_education_data():
+    education_file_path = Path(__file__).resolve().parent / 'static' / 'data' / 'education.json'
+
+    with open(education_file_path, 'r') as f:
+        members_education_data = json.load(f)
+
+    return members_education_data['members']
 
 def create_marker(location, color):
     marker = folium.Marker(
@@ -60,6 +67,7 @@ def load_member_locations():
 @app.route('/')
 def index():
     members = load_member_locations()
+    members_education = load_member_education_data()
     map_html = create_map(members)
 
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), map=map_html, members=members)
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), map=map_html, members=members, members_education=members_education)
