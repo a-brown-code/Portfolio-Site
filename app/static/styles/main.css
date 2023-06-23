@@ -97,6 +97,19 @@ body {
     font-weight: 700;
 }
 
+.about-us h2 {
+    margin-right: 10px;
+    margin-left: 15px;
+    color: #1C539F;
+    font-size: 40px;
+    text-align: center;
+    text-underline-offset: 5px;
+}
+
+.about-us h3 {
+    font-size: 30px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .profile h1 {
