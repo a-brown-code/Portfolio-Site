@@ -44,31 +44,52 @@
 
     <div class="education-section">
         <h2>Education</h2>
+        
+        <div class="member-tabs">
+            {% for member in members_education %}
+              <button id="tab-member-{{ loop.index }}" class="tab-button{% if loop.index == 1 %} active{% endif %}" onclick="openTab('member', '{{ loop.index }}')">
+                {{ member.name }}
+              </button>
+            {% endfor %}
+        </div>
+
         <div class="timeline-content">
-            <ul class="timeline">
+            {% for member in members_education %}
+            <ul id="content-member-{{ loop.index }}" class="timeline{% if loop.index == 1 %} active{% endif %}">
+                {% for education in member.education %}
                 <li class="timeline-item">
-                    <div class="timeline-date">23/22/1920</div>
+                    <div class="timeline-date">{{ education.date }}</div>
                     <div class="timeline-education">
-                        <h3>B. S. Digital Systems and Robotics</h3>
-                        <p>Universidad de Guanajuato</p>
+                        <h3>{{ education.degree }}</h3>
+                        <p>{{ education.institution }}</p>
                     </div>
                 </li>
-                <li class="timeline-item">
-                    <div class="timeline-date">23/22/1920</div>
-                    <div class="timeline-education">
-                        <h3>Degree</h3>
-                        <p>Institution</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-date">23/22/1920</div>
-                    <div class="timeline-education">
-                        <h3>Degree</h3>
-                        <p>Institution</p>
-                    </div>
-                </li>
+                {% endfor %}
             </ul>
+            {% endfor %}
         </div>
     </div>
+
+    <script>
+        function openTab(memberType, memberId) {
+            // Hide all tab content
+            var tabContents = document.getElementsByClassName('timeline');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+          
+            // Show the selected tab content
+            var selectedTabContent = document.getElementById('content-' + memberType + '-' + memberId);
+            selectedTabContent.classList.add('active');
+
+            // Sets the active tab button
+            var tabButtons = document.getElementsByClassName('tab-button');
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+            var selectedTabButton = document.getElementById('tab-' + memberType + '-' + memberId);
+            selectedTabButton.classList.add('active');
+        }
+    </script>   
 </body>
 </html>
