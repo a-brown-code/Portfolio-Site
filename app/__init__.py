@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 experiences_lst = [
     {
+        "holder": "Aerin",
         "photo": "logo.svg",
         "position": "Site Reliability Engineering Fellow",
         "company": "Major League Hacking",
@@ -14,6 +15,7 @@ experiences_lst = [
         "description": "The Site Reliability Engineering Program is an opportunity to learn how to be a great Site Reliability Engineer by completing an interactive curriculum getting you hands on experience with the tools used by thousands of companies around the world."
     }, 
     {
+        "holder": "EXAMPLE",
         "photo": "avatar.jpg",
         "position": "EXAMPLE",
         "company": "EXAMPLE",
@@ -22,6 +24,8 @@ experiences_lst = [
     }, 
 ]
 
+fellows_list = ["Aerin", "EXAMPLE", "SAMPLE"]
+
 @app.route('/')
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), experiences=experiences_lst)
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), experiences=experiences_lst, people=fellows_list)
