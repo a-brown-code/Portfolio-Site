@@ -262,8 +262,9 @@ body {
 }
 
 .hobby img {
-    max-height: 300px;
-    max-width: 300px;
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
 }
 
 

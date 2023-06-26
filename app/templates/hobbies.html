@@ -38,7 +38,7 @@
                     {% for hobby_data in member["hobbies"] %}
                     <div class="hobby">
                         <h3>{{ hobby_data["hobby"] }}</h3>
-                        <img src="{{ hobby_data['img'] }}">
+                        <div class="hobby-img-container"><img src="{{ hobby_data['img'] }}"></div>
                     </div>
                     {% endfor %}
                 </div>
