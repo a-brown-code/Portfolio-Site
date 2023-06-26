@@ -32,7 +32,16 @@
 
     <div class="hobbies">
         <h1>{{ title }}</h1>
-        <p>{{ members_hobbies }}</p>
+        <div>
+            {% for member in members_hobbies %}
+                <div>
+                    <h2>{{ member["name"] }}</h2>
+                    {% for hobby_data in member["hobbies"] %}
+                    <p>{{ hobby_data["hobby"] }}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </body>
 </html>
