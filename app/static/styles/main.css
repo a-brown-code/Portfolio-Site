@@ -243,9 +243,10 @@ body {
     margin-bottom: 20px;
 }
 
-.hobby-header {
-    padding-left: 100px;
-} 
+.hobby-container {
+    padding-bottom: 75px;
+    padding-left: 75px;
+}
 
 .member-hobby-flexbox {
     display: flex;

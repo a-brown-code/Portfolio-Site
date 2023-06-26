@@ -32,13 +32,13 @@
 
     <div>
         {% for member in members_hobbies %}
-            <div>
-                <h2 class="hobby-header">{{ member["name"] }}'s Hobbies</h2>
+            <div class="hobby-container">
+                <h2>{{ member["name"] }}'s Hobbies</h2>
                 <div class="member-hobby-flexbox">
                     {% for hobby_data in member["hobbies"] %}
                     <div class="hobby">
                         <h3>{{ hobby_data["hobby"] }}</h3>
-                        <div class="hobby-img-container"><img src="{{ hobby_data['img'] }}"></div>
+                        <img src="{{ hobby_data['img'] }}">
                     </div>
                     {% endfor %}
                 </div>
