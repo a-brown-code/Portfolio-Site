@@ -4,7 +4,19 @@
             "name": "Miguel",
             "hobbies": [
                 {
-                    "name": "",
+                    "name": "Hiking",
+                    "img": ""
+                },
+                {
+                    "name": "Reading",
+                    "img": ""
+                },
+                {
+                    "name": "Origami",
+                    "img": ""
+                },
+                {
+                    "name": "Chess",
                     "img": ""
                 }
             ]
@@ -13,7 +25,19 @@
             "name": "Aerin",
             "hobbies": [
                 {
-                    "name": "",
+                    "name": "Placeholder",
+                    "img": ""
+                },
+                {
+                    "name": "Placeholder",
+                    "img": ""
+                },
+                {
+                    "name": "Placeholder",
+                    "img": ""
+                },
+                {
+                    "name": "Placeholder",
                     "img": ""
                 }
             ]
@@ -22,7 +46,19 @@
             "name": "Julian",
             "hobbies": [
                 {
-                    "name": "",
+                    "name": "Painting",
+                    "img": ""
+                },
+                {
+                    "name": "Cooking",
+                    "img": ""
+                },
+                {
+                    "name": "Inline Skating",
+                    "img": ""
+                },
+                {
+                    "name": "Sculpting",
                     "img": ""
                 }
             ]
