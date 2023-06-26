@@ -12,7 +12,6 @@ body {
     width: auto; 
     overflow-x: hidden;
     font-family: "Roboto", serif;
-    scroll-behavior: smooth;
     margin: 0px;
 }
 
