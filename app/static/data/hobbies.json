@@ -4,19 +4,19 @@
             "name": "Miguel",
             "hobbies": [
                 {
-                    "name": "Hiking",
+                    "hobby": "Hiking",
                     "img": ""
                 },
                 {
-                    "name": "Reading",
+                    "hobby": "Reading",
                     "img": ""
                 },
                 {
-                    "name": "Origami",
+                    "hobby": "Origami",
                     "img": ""
                 },
                 {
-                    "name": "Chess",
+                    "hobby": "Chess",
                     "img": ""
                 }
             ]
@@ -25,19 +25,19 @@
             "name": "Aerin",
             "hobbies": [
                 {
-                    "name": "Placeholder",
+                    "hobby": "Placeholder",
                     "img": ""
                 },
                 {
-                    "name": "Placeholder",
+                    "hobby": "Placeholder",
                     "img": ""
                 },
                 {
-                    "name": "Placeholder",
+                    "hobby": "Placeholder",
                     "img": ""
                 },
                 {
-                    "name": "Placeholder",
+                    "hobby": "Placeholder",
                     "img": ""
                 }
             ]
@@ -46,19 +46,19 @@
             "name": "Julian",
             "hobbies": [
                 {
-                    "name": "Painting",
+                    "hobby": "Painting",
                     "img": ""
                 },
                 {
-                    "name": "Cooking",
+                    "hobby": "Cooking",
                     "img": ""
                 },
                 {
-                    "name": "Inline Skating",
+                    "hobby": "Inline Skating",
                     "img": ""
                 },
                 {
-                    "name": "Sculpting",
+                    "hobby": "Sculpting",
                     "img": ""
                 }
             ]
