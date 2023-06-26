@@ -63,6 +63,13 @@ def load_member_locations():
         members = data['members']
     return members
 
+def load_member_hobby_data():
+    hobby_file_path = Path(__file__).resolve().parent / 'static' / 'data' / 'hobbies.json'
+    
+    with open(hobby_file_path, 'r') as f:
+        members_hobby_data = json.load(f)
+
+    return members_hobby_data['members']
 
 @app.route('/')
 def index():
@@ -74,4 +81,6 @@ def index():
 
 @app.route('/hobbies')
 def hobbies():
-    return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"))
+    members_hobbies = load_member_hobby_data()
+    
+    return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"), members_hobbies = members_hobbies)
