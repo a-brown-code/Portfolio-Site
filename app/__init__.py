@@ -71,3 +71,7 @@ def index():
     map_html = create_map(members)
 
     return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), map=map_html, members=members, members_education=members_education)
+
+@app.route('/hobbies')
+def hobbies():
+    return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"))
