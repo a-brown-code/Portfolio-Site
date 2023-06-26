@@ -243,6 +243,29 @@ body {
     margin-bottom: 20px;
 }
 
+.hobby-header {
+    padding-left: 100px;
+} 
+
+.member-hobby-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.hobby img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
