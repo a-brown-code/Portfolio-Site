@@ -1,0 +1,31 @@
+{
+    "members": [
+        {
+            "name": "Miguel",
+            "hobbies": [
+                {
+                    "name": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Aerin",
+            "hobbies": [
+                {
+                    "name": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Julian",
+            "hobbies": [
+                {
+                    "name": "",
+                    "img": ""
+                }
+            ]
+        }
+    ]
+}
