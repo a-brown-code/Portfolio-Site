@@ -37,7 +37,7 @@
                 <div class="member-hobby-flexbox">
                     {% for hobby_data in member["hobbies"] %}
                     <div class="hobby">
-                        <div>{{ hobby_data["hobby"] }}</div>
+                        <h3>{{ hobby_data["hobby"] }}</h3>
                         <img src="{{ hobby_data['img'] }}">
                     </div>
                     {% endfor %}
