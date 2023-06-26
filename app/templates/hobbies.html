@@ -38,6 +38,7 @@
                     <h2>{{ member["name"] }}</h2>
                     {% for hobby_data in member["hobbies"] %}
                     <p>{{ hobby_data["hobby"] }}</p>
+                    <img src="{{ hobby_data['img'] }}">
                     {% endfor %}
                 </div>
             {% endfor %}
