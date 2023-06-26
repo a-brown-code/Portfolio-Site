@@ -30,19 +30,19 @@
         </div>
     </header>
 
-    <div class="hobbies">
+    <div>
         <h1>{{ title }}</h1>
-        <div>
             {% for member in members_hobbies %}
-                <div>
+                <div class="member-hobby-container">
                     <h2>{{ member["name"] }}</h2>
                     {% for hobby_data in member["hobbies"] %}
-                    <p>{{ hobby_data["hobby"] }}</p>
-                    <img src="{{ hobby_data['img'] }}">
+                    <div class="hobby">
+                        <p>{{ hobby_data["hobby"] }}</p>
+                        <img src="{{ hobby_data['img'] }}">
+                    </div>
                     {% endfor %}
                 </div>
             {% endfor %}
-        </div>
-    </div>
+\    </div>
 </body>
 </html>
