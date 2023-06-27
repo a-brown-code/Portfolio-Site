@@ -1,0 +1,50 @@
+{
+    "members": [
+      {
+        "name": "Miguel",
+        "education": [
+          {
+            "date": "Graduating in 2026",
+            "degree": "B. S. Digital Systems and Robotics",
+            "institution": "Universidad de Guanajuato"
+          },
+          {
+            "date": "2018 - 2021",
+            "degree": "Mechatronics Technician",
+            "institution": "ENMS Salamanca"
+          }
+        ]
+      },
+      {
+        "name": "Aerin",
+        "education": [
+          {
+            "date": "Date",
+            "degree": "Degree",
+            "institution": "Institution"
+          },
+          {
+            "date": "Date",
+            "degree": "Degree",
+            "institution": "Institution"
+          }
+        ]
+      },
+      {
+        "name": "Julian",
+        "education": [
+          {
+            "date": "Date",
+            "degree": "Degree",
+            "institution": "Institution"
+          },
+          {
+            "date": "Date",
+            "degree": "Degree",
+            "institution": "Institution"
+          }
+        ]
+      }
+    ]
+  }
+  
