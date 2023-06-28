@@ -13,9 +13,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
     <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a489d226ee.js" crossorigin="anonymous"></script>
     <title>{{ title }}</title>
 </head>
 
@@ -27,7 +32,21 @@
                     <img src="./static/img/logo.svg" />
                 </div>
             </a>
+            <div class="nav-icon" onclick="toggleNav()">
+                <i class="fas fa-bars" id="icon"></i>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="toggle-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Experience</a></li>
+                    <li><a href="/hobbies">Hobbies</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#map">Map</a></li>
+                </ul>
+            </nav>
         </div>
+        <script defer src="{{ url_for('static', filename='scripts/navmenu.js') }}"></script> 
     </header>
 
     <div class="profile">
@@ -41,8 +60,20 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
+
+    <div class="about-us">
+      <! -- About Us Section -->
+        <h2><u>About Us</u></h2>
+        {% for person in about_us %}
+            <h3>{{person.name}}</h3>
+            <p>{{person.text}}</p>
+            <hr>
+        {% endfor %}
+    </div>
   
-  <div class="education-section">
+  <div class="education-section">  
+    <!-- Education Section -->
+    <div class="education-section section" id="education">
         <h2>Education</h2>
         
         <div class="member-tabs">
@@ -68,11 +99,11 @@
             </ul>
             {% endfor %}
         </div>
-      
-        <script src="{{ url_for('static', filename='scripts/opentab.js') }}"></script>
-  </div>
-  
-    <div class="work">
+        <script defer src="{{ url_for('static', filename='scripts/opentab.js') }}"></script>
+    </div>
+    
+    <!-- Work Experience Section -->
+    <div class="work section" id="work">
         <h2><u>Work Experience</u></h2>
 
         <div class="work-selector">
@@ -93,10 +124,11 @@
             </div>
         {% endfor %}
       
-      <script src="{{ url_for('static', filename='scripts/openworktab.js') }}"></script>
-  </div> 
-      
-    <div class="map-container">
+      <script defer src="{{ url_for('static', filename='scripts/openworktab.js') }}"></script>
+    </div> 
+    
+    <!-- Map Section -->
+    <div class="map-container section" id="map">
         <div class="map-text">
             <h2>Places we've been to</h2>
             <p>Here are some of the places we've been to.</p>
@@ -114,6 +146,5 @@
             {{ map|safe }}
       </div>
     </div> 
-
 </body>
 </html>
