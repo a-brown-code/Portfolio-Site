@@ -60,7 +60,18 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
-   
+
+    <div class="about-us">
+      <! -- About Us Section -->
+        <h2><u>About Us</u></h2>
+        {% for person in about_us %}
+            <h3>{{person.name}}</h3>
+            <p>{{person.text}}</p>
+            <hr>
+        {% endfor %}
+    </div>
+  
+  <div class="education-section">  
     <!-- Education Section -->
     <div class="education-section section" id="education">
         <h2>Education</h2>

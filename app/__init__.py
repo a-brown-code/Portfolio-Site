@@ -29,6 +29,14 @@ experiences_lst = [
 
 fellows_list = ["Aerin", "EXAMPLE", "SAMPLE"]
 
+def load_about_us_data():
+    about_file_path = Path(__file__).resolve().parent / 'static' / 'data' / 'about.json'
+
+    with open(about_file_path, 'r') as f:
+        about_us_data = json.load(f)
+    
+    return about_us_data['about']
+
 def load_member_education_data():
     education_file_path = Path(__file__).resolve().parent / 'static' / 'data' / 'education.json'
 
@@ -97,8 +105,8 @@ def index():
     members = load_member_locations()
     members_education = load_member_education_data()
     map_html = create_map(members)
-
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), map=map_html, members=members, members_education=members_education, experiences=experiences_lst, people=fellows_list)
+    
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), map=map_html, members=members, members_education=members_education, experiences=experiences_lst, people=fellows_list, about_us=load_about_us_data())
 
 @app.route('/hobbies')
 def hobbies():
