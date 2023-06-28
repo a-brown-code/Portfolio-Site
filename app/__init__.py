@@ -84,6 +84,13 @@ def load_member_locations():
         members = data['members']
     return members
 
+def load_member_hobby_data():
+    hobby_file_path = Path(__file__).resolve().parent / 'static' / 'data' / 'hobbies.json'
+    
+    with open(hobby_file_path, 'r') as f:
+        members_hobby_data = json.load(f)
+
+    return members_hobby_data['members']
 
 @app.route('/')
 def index():
@@ -92,3 +99,9 @@ def index():
     map_html = create_map(members)
 
     return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), map=map_html, members=members, members_education=members_education, experiences=experiences_lst, people=fellows_list)
+
+@app.route('/hobbies')
+def hobbies():
+    members_hobbies = load_member_hobby_data()
+    
+    return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"), members_hobbies = members_hobbies)
