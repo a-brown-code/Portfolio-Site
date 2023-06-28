@@ -2,7 +2,7 @@
   "members": [
     {
       "name": "Miguel",
-      "color": "pink",
+      "color": "gray",
       "locations": [
         {
           "name": "Los Colomos Forest",
@@ -27,12 +27,18 @@
           "lat": 21.0167,
           "lon": -101.25,
           "description": "The Monumento al Pípila is a monument in honor of Juan José de los Reyes Martínez Amaro, who burned out the main door of the Castillo de Granaditas on September 28, 1810. It is located in the city of Guanajuato, Guanajuato."
+        },
+        {
+          "name": "Acapulco",
+          "lat": 16.8531,
+          "lon": -99.8237,
+          "description": "Acapulco is a city and major seaport in the state of Guerrero on the Pacific coast of Mexico, 380 kilometres (240 mi) south of Mexico City."
         }
       ]
     },
     {
       "name": "Aerin",
-      "color": "orange",
+      "color": "purple",
       "locations": [
         {
           "name": "Peggy's Cove",
@@ -68,13 +74,43 @@
     },
     {
       "name": "Julian",
-      "color": "red",
+      "color": "darkblue",
       "locations": [
         {
-          "name": "Tokyo Tower",
-          "lat": 35.6586,
-          "lon": 139.7454,
-          "description": "This is a description of the location"
+          "name": "Denali National Park",
+          "lat": 63.1148,
+          "lon": -151.1926,
+          "description": "The national park surrounding the tallest mountain in North America, abundant wildlife including moose and grizzly bears."
+        },
+        {
+          "name": "Anchorage",
+          "lat": 61.2176,
+          "lon": -149.8997,
+          "description": "The largest city in Alaska. Fresh seafood restaurants. Long days in the summer and long nights in winter."
+        },
+        {
+          "name": "Charleston",
+          "lat": 32.7765,
+          "lon": -79.9311,
+          "description": "The capital of South Carolina, a charming smaller city with a vibrant culinary scene."
+        },
+        {
+          "name": "Virginia Eastern Shore",
+          "lat": 37.5398,
+          "lon": -75.823,
+          "description": "Peaceful small towns and New England rocky beaches. Nearby islands such as Chincoteague are home to wild horses."
+        },
+        {
+          "name": "Lake Erie",
+          "lat": 42.0669,
+          "lon": -81.3399,
+          "description": "The smallest Great Lake with serene views to anyone visiting the area."
+        },
+        {
+          "name": "Atlanta",
+          "lat": 33.7488,
+          "lon": -84.3877,
+          "description": "The largest city in the Southeastern United States."
         }
       ]
     }
