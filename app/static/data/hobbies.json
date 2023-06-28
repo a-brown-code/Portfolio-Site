@@ -25,20 +25,20 @@
             "name": "Aerin",
             "hobbies": [
                 {
-                    "hobby": "Placeholder",
-                    "img": "../static/img/hobby-placeholder.jpg"
+                    "hobby": "Digital Art",
+                    "img": "../static/img/hobby-digital-art.jpg"
                 },
                 {
-                    "hobby": "Placeholder",
-                    "img": "../static/img/hobby-placeholder.jpg"
+                    "hobby": "Tabletop RPGs",
+                    "img": "../static/img/hobby-ttrpg.jpg"
                 },
                 {
-                    "hobby": "Placeholder",
-                    "img": "../static/img/hobby-placeholder.jpg"
+                    "hobby": "Dance",
+                    "img": "../static/img/hobby-dance.jpg"
                 },
                 {
-                    "hobby": "Placeholder",
-                    "img": "../static/img/hobby-placeholder.jpg"
+                    "hobby": "Reading",
+                    "img": "../static/img/hobby-reading.jpg"
                 }
             ]
         },

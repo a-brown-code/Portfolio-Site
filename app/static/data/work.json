@@ -9,6 +9,14 @@
             "description": "The Site Reliability Engineering Program is an opportunity to learn how to be a great Site Reliability Engineer by completing an interactive curriculum getting you hands on experience with the tools used by thousands of companies around the world."
         }, 
         {
+            "holder": "Aerin",
+            "photo": "mcgill-robotics.jpg",
+            "position": "Software Programmer",
+            "company": "McGill Robotics Team",
+            "dates": "Sept 24 - Ongoing",
+            "description": "The McGill Robotics Team's software division is a large team responsible for programming the teams various robots. I worked on the Mars rover project, specifically on the arm subteam. I was responsible for developing inverse kinematics and path planning algorithms for use in a national competition."
+        }, 
+        {
             "holder": "EXAMPLE",
             "photo": "avatar.jpg",
             "position": "EXAMPLE",
