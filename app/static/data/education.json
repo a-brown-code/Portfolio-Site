@@ -34,14 +34,9 @@
         "name": "Julian",
         "education": [
           {
-            "date": "Date",
-            "degree": "Degree",
-            "institution": "Institution"
-          },
-          {
-            "date": "Date",
-            "degree": "Degree",
-            "institution": "Institution"
+            "date": "Graduating in 2025",
+            "degree": "B. S. Computer Science",
+            "institution": "Georgia State University"
           }
         ]
       }
