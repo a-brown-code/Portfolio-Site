@@ -20,7 +20,7 @@ body {
     display: inline-block;
     background-color: #1C539F;
     font-family: "Roboto", serif;
-    font-weight: 500 !important;
+    font-weight: 700 !important;
     padding-top: 10px;
     padding-bottom: 10px;
     position: sticky;
@@ -81,7 +81,6 @@ body {
 
 .nav-menu {
     list-style: none;
-    font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
 }

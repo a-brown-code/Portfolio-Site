@@ -46,6 +46,7 @@
                 </ul>
             </nav>
         </div>
+        <script defer src="{{ url_for('static', filename='scripts/navmenu.js') }}"></script> 
     </header>
 
     <div class="profile">
@@ -59,8 +60,8 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
-
-        
+   
+    <!-- Education Section -->
     <div class="education-section section" id="education">
         <h2>Education</h2>
         
@@ -87,11 +88,11 @@
             </ul>
             {% endfor %}
         </div>
-      
-        <script src="{{ url_for('static', filename='scripts/opentab.js') }}"></script>
-  </div>
-  
-    <div class="work">
+        <script defer src="{{ url_for('static', filename='scripts/opentab.js') }}"></script>
+    </div>
+    
+    <!-- Work Experience Section -->
+    <div class="work section" id="work">
         <h2><u>Work Experience</u></h2>
 
         <div class="work-selector">
@@ -112,9 +113,10 @@
             </div>
         {% endfor %}
       
-      <script src="{{ url_for('static', filename='scripts/openworktab.js') }}"></script>
-  </div> 
-      
+      <script defer src="{{ url_for('static', filename='scripts/openworktab.js') }}"></script>
+    </div> 
+    
+    <!-- Map Section -->
     <div class="map-container section" id="map">
         <div class="map-text">
             <h2>Places we've been to</h2>
@@ -133,8 +135,5 @@
             {{ map|safe }}
       </div>
     </div> 
-
-    <script src="{{ url_for('static', filename='scripts/opentab.js') }}"></script>
-    <script src="{{ url_for('static', filename='scripts/navmenu.js') }}"></script> 
 </body>
 </html>
