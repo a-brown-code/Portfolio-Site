@@ -19,14 +19,14 @@
         "name": "Aerin",
         "education": [
           {
-            "date": "Date",
-            "degree": "Degree",
-            "institution": "Institution"
+            "date": "Graduating in 2026",
+            "degree": "B. Eng. Software Engineering",
+            "institution": "McGill University"
           },
           {
-            "date": "Date",
-            "degree": "Degree",
-            "institution": "Institution"
+            "date": "2022",
+            "degree": "Dogwood Diploma",
+            "institution": "Southridge School"
           }
         ]
       },
