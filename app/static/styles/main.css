@@ -180,8 +180,9 @@ body {
 
 .about-us h3 {
     font-size: 30px;
+}
 
-.work .work-experience.inactive{
+.work .work-experience.inactive {
     display: none;
 }
 
