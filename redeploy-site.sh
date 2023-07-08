@@ -5,7 +5,7 @@ tmux new
 python -m venv python3-virtualenv
 source python3-virtualenv/bin/activate
 pip install -r requirements.txt
-if [ $? -ne 0 ]
+if [[ $? -ne 0 ]]
 then
 REQS=$( grep -o "[[:alnum:]]*=" requirements.txt | sed 's/=//' )
 for REQ in $REQS
