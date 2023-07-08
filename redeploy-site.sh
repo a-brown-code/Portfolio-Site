@@ -4,7 +4,7 @@ git fetch && git reset origin/main --hard
 tmux -d new
 python -m venv python3-virtualenv
 source python3-virtualenv/bin/activate
-pip install --upgrade
+pip install --upgrade pip
 pip install -r requirements.txt
 if [[ $? -ne 0 ]]
 then
