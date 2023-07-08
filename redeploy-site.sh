@@ -1,6 +1,5 @@
 #!/bin/sh
 tmux kill-server
-rm -r -f python3-virtualenv
 git fetch && git reset origin/main --hard
 tmux -d new
 python -m venv python3-virtualenv
