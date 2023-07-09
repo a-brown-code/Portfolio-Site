@@ -1,8 +1,6 @@
 #!/bin/sh
 tmux kill-server
 git fetch && git reset origin/main --hard
-tmux new -d
-tmux attach-session -t 0
 python -m venv python3-virtualenv
 source python3-virtualenv/bin/activate
 pip install --upgrade pip
@@ -17,4 +15,4 @@ done
 fi
 export FLASK_ENV=development
 flask run --host=0.0.0.0
-tmux detach
+tmux new -d
