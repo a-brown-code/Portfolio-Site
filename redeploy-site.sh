@@ -1,7 +1,7 @@
 #!/bin/sh
 tmux kill-server
 git fetch && git reset origin/main --hard
-tmux -d new
+tmux new -d
 python -m venv python3-virtualenv
 source python3-virtualenv/bin/activate
 pip install --upgrade pip
