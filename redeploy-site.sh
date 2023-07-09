@@ -14,5 +14,5 @@ pip install $REQ
 done
 fi
 tmux new -d
-tmux send-keys export FLASK_ENV=development
-tmux send-keys flask run --host=0.0.0.0
+tmux send-keys 'export FLASK_ENV=development' C-m
+tmux send-keys 'flask run --host=0.0.0.0' C-m
