@@ -13,6 +13,6 @@ do
 pip install $REQ
 done
 fi
-export FLASK_ENV=development
-flask run --host=0.0.0.0
 tmux new -d
+tmux send-keys export FLASK_ENV=development
+tmux send-keys flask run --host=0.0.0.0
