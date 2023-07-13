@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Personal Portfolio">
+    <meta property="og:description" content="My Personal Portfolio">
+    <meta property="og:url" content="{{ url }}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+    <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
+    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
+    
+    <script src="https://kit.fontawesome.com/a489d226ee.js" crossorigin="anonymous"></script>
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    <header class="nav-bar">
+        <div class="nav-content">
+            <a href="/">
+                <div class="nav-logo">
+                    <img src="./static/img/logo.svg" />
+                </div>
+            </a>
+        </div>
+        <script defer src="{{ url_for('static', filename='scripts/navmenu.js') }}"></script> 
+    </header>
+
+    <div class="messages">
+        <div class="post-message">
+            <form id="message-form" action="/api/timeline_post" method="post">
+                <input type="text" id="name" name="name" value="Name">
+                <input type="email" id="email" name="email" value="Email">
+                <input type="text" id="content" name="content" value="Your message here...">
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div class="display-messages">
+            <list class="message-list" id="message-list">
+            </list>
+        </div>
+        <script defer src="{{ url_for('static', filename='scripts/posts.js') }}"></script>
+    </div>
+</body>
