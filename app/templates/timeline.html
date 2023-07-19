@@ -36,14 +36,15 @@
     </header>
 
     <div class="messages">
-        <div class="post-message">
-            <form id="message-form" action="/api/timeline_post" method="post">
-                <input type="text" id="name" name="name" value="Name">
-                <input type="email" id="email" name="email" value="Email">
-                <input type="text" id="content" name="content" value="Your message here...">
-                <button type="submit">Post</button>
-            </form>
-        </div>
+        <form class="post-message" id="message-form" action="/api/timeline_post" method="post">
+            <input class= "name" type="text" id="name" name="name" value="Name">
+            <input class="email" type="email" id="email" name="email" value="Email">
+            <textarea class="content" id="content" name="content">Your message here...</textarea>
+            <button type="submit" class="submit">Post</button>
+        </form>
+
+        <hr>
+
         <div class="display-messages">
             <list class="message-list" id="message-list">
             </list>

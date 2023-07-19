@@ -4,6 +4,10 @@ p, h1, h2, h3, h4, h5, h6, button {
     margin-left: 15px;
 }
 
+textarea {  
+    font-family: "Roboto", serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -442,6 +446,46 @@ body {
     object-fit: cover;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: auto auto 5fr;
+    padding: 10px 10px 10px 10px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: 40%;
+    align-items: end;
+    row-gap: 5px;
+}
+
+.messages .post-message .name {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 3px;
+}
+
+.messages .post-message .email {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 3px;
+}
+
+.messages .post-message .content {
+    grid-column: 1;
+    grid-row: 3;
+    height: 150px;
+}
+
+.messages .post-message .submit {
+    grid-column: 2;
+    grid-row: 3;
+    justify-items: left;
+    height: 30px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 3px solid #555;
+}
 
 /* Media Queries */
 @media (max-width: 920px) {
