@@ -7,6 +7,7 @@ from pathlib import Path
 from peewee import *
 import datetime
 from playhouse.shortcuts import model_to_dict
+import re
 
 load_dotenv()
 app = Flask(__name__)
@@ -143,7 +144,8 @@ def post_time_line_post():
         return Response("Invalid content", status=400)
 
     # POST request with malformed email
-    if request.form['email'] == "not-an-email":
+    regex_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
+    if not re.fullmatch(regex_pattern, request.form['email']):
         return Response("Invalid email", status=400)
 
     name = request.form['name']
