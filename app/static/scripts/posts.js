@@ -3,13 +3,13 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
     const formData = new FormData(form);
     const payload = new URLSearchParams(formData);
-    fetch('http://127.0.0.1:5000/api/timeline_post', {method: 'POST', body: payload})
+    fetch('http://http://aerinbrownportfolio.duckdns.org:5000//api/timeline_post', {method: 'POST', body: payload})
     .then(res => res.json())
     .then(data => console.log(data))
     location.reload();
 })
 
-fetch('http://127.0.0.1:5000/api/timeline_post')
+fetch('http://http://aerinbrownportfolio.duckdns.org:5000//api/timeline_post')
     .then((response) => {return response.json();})
     .then((data) => {
         let posts = data.timeline_posts;
