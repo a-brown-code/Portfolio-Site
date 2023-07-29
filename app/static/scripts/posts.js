@@ -9,7 +9,7 @@ form.addEventListener('submit', function(e) {
     location.reload();
 })
 
-fetch('http://aerinbrownportfolio.duckdns.org/api/timeline_post')
+fetch('http://aerinbrownportfolio.duckdns.org:5000/api/timeline_post')
     .then((response) => {return response.json();})
     .then((data) => {
         let posts = data.timeline_posts;
