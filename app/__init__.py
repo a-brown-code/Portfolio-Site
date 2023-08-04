@@ -32,11 +32,6 @@ class TimelinePost(Model):
 mydb.connect()
 mydb.create_tables([TimelinePost])
 
-@app.teardown_appcontext
-def close_db(exeption):
-    if not mydb.is_closed():
-        mydb.close()
-
 def load_work_experience():
     work_file_path = Path(__file__).resolve().parent / 'static' / 'data' / 'work.json'
 
