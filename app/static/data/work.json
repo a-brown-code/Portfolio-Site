@@ -1,7 +1,7 @@
 {
     "work" : [
         {
-            "holder": "Aerin",
+            "holder": "Software Roles",
             "photo": "logo.svg",
             "position": "Site Reliability Engineering Fellow",
             "company": "Major League Hacking",
@@ -9,7 +9,7 @@
             "description": "The Site Reliability Engineering Program is an opportunity to learn how to be a great Site Reliability Engineer by completing an interactive curriculum getting you hands on experience with the tools used by thousands of companies around the world."
         }, 
         {
-            "holder": "Aerin",
+            "holder": "Software Roles",
             "photo": "mcgill-robotics.jpg",
             "position": "Software Programmer",
             "company": "McGill Robotics Team",
