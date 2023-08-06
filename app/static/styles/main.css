@@ -4,6 +4,10 @@ p, h1, h2, h3, h4, h5, h6, button {
     margin-left: 15px;
 }
 
+textarea {  
+    font-family: "Roboto", serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -169,6 +173,10 @@ body {
     font-weight: 700;
 }
 
+.about-us {
+    padding-top: 0px;
+}
+
 .about-us h2 {
     margin-right: 10px;
     margin-left: 15px;
@@ -176,6 +184,8 @@ body {
     font-size: 40px;
     text-align: center;
     text-underline-offset: 5px;
+    margin-top: 0px;
+    padding-top:0px;
 }
 
 .about-us h3 {
@@ -442,6 +452,75 @@ body {
     object-fit: cover;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: auto auto 5fr;
+    padding: 10px 10px 10px 10px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: 40%;
+    align-items: end;
+    row-gap: 5px;
+}
+
+.messages .post-message .name {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 3px;
+}
+
+.messages .post-message .email {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 3px;
+}
+
+.messages .post-message .content {
+    grid-column: 1;
+    grid-row: 3;
+    height: 150px;
+}
+
+.messages .post-message .submit {
+    grid-column: 2;
+    grid-row: 3;
+    justify-items: left;
+    height: 30px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 3px solid #555;
+}
+
+.messages .display-messages li {
+    padding-bottom: 1.5rem;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-right: 100px;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.messages .display-messages h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #1d539f;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.messages .display-messages h2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #555;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-style: italic;
+}
 
 /* Media Queries */
 @media (max-width: 920px) {

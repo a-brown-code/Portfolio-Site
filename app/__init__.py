@@ -125,7 +125,7 @@ def index():
     members_education = load_member_education_data()
     map_html = create_map(members)
     
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), map=map_html, members=members, members_education=members_education, experiences=load_work_experience(), people=load_fellows(), about_us=load_about_us_data())
+    return render_template('index.html', title="Aerin Brown", url=os.getenv("URL"), map=map_html, members=members, members_education=members_education, experiences=load_work_experience(), people=load_fellows(), about_us=load_about_us_data())
 
 @app.route('/hobbies')
 def hobbies():

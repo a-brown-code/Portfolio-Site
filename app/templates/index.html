@@ -51,21 +51,16 @@
 
     <div class="profile">
         <div id="profile-picture" class="profile-picture">
-            <!-- Miguel's Profile Picture -->
-            <img src="../static/img/IMG_0201.jpg" alt="Image 2">
             <!-- Add your profile picture here -->
             <img src="./static/img/aerin.jpg" alt="Aerin Brown">
-            <!-- Add your profile picture here -->
-            <img src="./static/img/gibbonhug.jpg" alt="Image 4">
         </div>
         <h1>{{ title }}</h1>
     </div>
 
     <div class="about-us section" id="about">
       <! -- About Us Section -->
-        <h2><u>About Us</u></h2>
+        <h2><u>About Me</u></h2>
         {% for person in about_us %}
-            <h3>{{person.name}}</h3>
             <p>{{person.text}}</p>
             <hr>
         {% endfor %}
