@@ -15,14 +15,14 @@ fetch('http://127.0.0.1:5000/api/timeline_post')
         let posts = data.timeline_posts;
         const messageList = document.querySelector('#message-list') 
         posts.map(function(post) {
-            let name = document.createElement('p');
-            let email = document.createElement('p');
+            let name = document.createElement('h1');
+            let email = document.createElement('h2');
             let content = document.createElement('p');
             name.innerHTML = post.name;
             email.innerHTML = post.email;
             content.innerHTML = post.content;
             
-            let message = document.createDocumentFragment();
+            let message = document.createElement('li');
             message.appendChild(name);
             message.appendChild(email);
             message.appendChild(content);
