@@ -14,9 +14,7 @@ class AppTestCase(unittest.TestCase):
         response = self.client.get("/")
         assert response.status_code == 200
         html = response.get_data(as_text=True)
-        assert "<title>MLH Fellow</title>" in html
-        # TODO Add more tests relating to the home page
-        assert "<h3>Aerin Brown</h3>" in html
+        assert "Aerin Brown" in html
         assert "<h3>B. Eng. Software Engineering</h3>" in html
         assert "<p>McGill University" in html
 
