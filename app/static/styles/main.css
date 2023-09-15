@@ -1,7 +1,15 @@
+/*
+Color palette:
+Blue - #32c2c9
+Dark - #312b40
+Light - #edfcfc 
+*/
+
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Roboto", serif;
     margin-right: 10px;
     margin-left: 15px;
+    color: #312b40;
 }
 
 textarea {  
@@ -13,7 +21,7 @@ html {
 }
 
 body {
-    background-color: #f5f5f9;
+    background-color: #edfcfc;
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
@@ -24,7 +32,7 @@ body {
 .nav-bar {
     width: 100%;
     display: inline-block;
-    background-color: #1C539F;
+    background-color: #32c2c9;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding-top: 10px;
@@ -81,7 +89,7 @@ body {
 }
 
 .nav-icon i {
-    color: white;
+    color: #312b40;
     font-size: 1.5em;
 }
 
@@ -97,7 +105,7 @@ body {
 }
 
 .nav-menu li a {
-    color: white;
+    color: #312b40;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s ease-in-out;
@@ -119,7 +127,7 @@ body {
 
 .nav-menu li a:hover::after {
     width: 100%;
-    background-color: #f8b92a;
+    background-color: #312b40;
 }
 
 .section {
