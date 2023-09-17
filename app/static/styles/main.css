@@ -72,6 +72,17 @@ body {
     width: 200px;
 }
 
+.nav-external {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.nav-external img {
+    width: 30px;
+}
+
 .nav-content nav {
     display: block;
     width: 100%;
