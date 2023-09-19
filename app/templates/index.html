@@ -136,17 +136,8 @@
     <!-- Map Section -->
     <div class="map-container section" id="map">
         <div class="map-text">
-            <h2>Places we've been to</h2>
-            <p>Here are some of the places we've been to.</p>
-            <div class="color-boxes">
-                {% for member in members %}
-                    <div class="color-box-container">
-                        <div class="color-box" style="--bg-color: {{ member.color }}">
-                        </div>
-                        <p>{{ member.name }}</p>
-                    </div>
-                {% endfor %}
-            </div>
+            <h2>My Travels</h2>
+            <p>Here are some of the places I've been to!</p>
         </div>
         <div class="map">
             {{ map|safe }}

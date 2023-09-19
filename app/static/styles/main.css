@@ -9,7 +9,7 @@ p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Roboto", serif;
     margin-right: 10px;
     margin-left: 15px;
-    color: #312b40;
+    color: #edfcfc;
 }
 
 textarea {  
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background-color: #edfcfc;
+    background-color: #312b40;
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
@@ -146,7 +146,7 @@ body {
 }
 
 .profile {
-    background-color: #1d539f !important;
+    background-color: #32c2c9 !important;
     text-align: center;
     height: auto;
     margin-bottom: 10px;
@@ -155,7 +155,7 @@ body {
 .profile h1 {
     font-size: 3em;
     font-weight: 700;
-    color: white;
+    color: #edfcfc;
     margin-bottom: 0px;
 }
 
@@ -176,7 +176,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: #1d539f;
+    background-color: #32c2c9;
 }
 
 .banner .logo {
@@ -187,7 +187,7 @@ body {
 }
 
 .banner .title {
-    color: white;
+    color: #edfcfc;
     font-size: 50px;
     font-weight: 700;
 }
@@ -199,7 +199,7 @@ body {
 .about-us h2 {
     margin-right: 10px;
     margin-left: 15px;
-    color: #1C539F;
+    color: #32c2c9;
     font-size: 40px;
     text-align: center;
     text-underline-offset: 5px;
@@ -244,17 +244,17 @@ body {
 }
 
 .work .work-selector-button.active {
-    background-color: #1C539F;
-    color: #f5f5f9;
+    background-color: #32c2c9;
+    color: #312b40;
 }
 
 .work .work-selector-button.inactive {
     background-color: #f5f5f9;
-    color: #1C539F;
+    color: #312b40;
 }
 
 .work h2 {
-    color: #1C539F;
+    color: #32c2c9;
     font-size: 2.5em;
     text-align: center;
     text-underline-offset: 0.15em;
@@ -263,11 +263,13 @@ body {
 .work h3 {
     margin: 0px 0px 0px 0px;
     font-size: 1.875em;
+    color: #312b40;
 }
 
 .work h4 {
     font-size: 1.3em;
     margin: 0px 0px 3px 0px;
+    color: #312b40;
 }
 
 .work img {
@@ -313,14 +315,14 @@ body {
 .map-container h2 {
     font-size: 2em;
     font-weight: 700;
-    color: #2b2b2b;
+    color: #edfcfc;
     margin-bottom: 20px;
 }
 
 .map-container p {
     font-size: 1.5em;
     font-weight: 400;
-    color: #2b2b2b;
+    color: #edfcfc;
 }
 
 .map-container .map-text {
@@ -363,7 +365,7 @@ body {
 }
 
 .education-section .timeline-content {
-    background: white;
+    background: #edfcfc;
     padding: 2rem;
     border-radius: 15px;
 }
@@ -386,7 +388,7 @@ body {
 
 .education-section li {
     padding-bottom: 1.5rem;
-    border-left: 1px solid #1d539f;
+    border-left: 1px solid #32c2c9;
     position: relative;
     padding-left: 20px;
     margin-left: 10px;
@@ -399,8 +401,8 @@ body {
         content: '';
         width: 1em;
         height: 1em;
-        background: white;
-        border: 1px solid #1d539f;
+        background: #edfcfc;
+        border: 1px solid #32c2c9;
         box-shadow: 3px 3px 0px #96b4df;
         border-radius: 50%;
         position: absolute;
@@ -410,12 +412,12 @@ body {
 }
 
 .education-section .timeline-content .timeline-item .timeline-date{
-    color: #1d539f;
+    color: #32c2c9;
     font-weight: 500;
 }
 
 .education-section .timeline-content .timeline-item .timeline-education h3 {
-    color: #2b2b2b;
+    color: #312b40;
     font-weight: 500;
 }
 
@@ -429,15 +431,15 @@ body {
     padding: 10px 20px;
     border: none;
     background-color: #f5f5f9;
-    color: #1d539f;
+    color: #312b40;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.5s;
 }
   
 .education-section .member-tabs .tab-button.active {
-    background-color: #1d539f;
-    color: #f5f5f9;
+    background-color: #32c2c9;
+    color: #312b40;
 }
   
 .education-section .member-tabs {
@@ -527,7 +529,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .messages .display-messages h1 {
     font-size: 1.5em;
     font-weight: 500;
-    color: #1d539f;
+    color: #32c2c9;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -556,7 +558,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
         right: -50%;
         width: 50%;
         height: 100vh;
-        background-color: #1d539f;
+        background-color: #32c2c9;
         transition: right 0.5s ease;
     }
     .nav-content nav ul li {
