@@ -60,24 +60,17 @@
         <script defer src="{{ url_for('static', filename='scripts/navmenu.js') }}"></script> 
     </header>
 
-    <div class="profile">
-        <div id="profile-picture" class="profile-picture">
-            <!-- Add your profile picture here -->
-            <img src="./static/img/aerin.jpg" alt="Aerin Brown">
+    <div class="about-us section" id="about">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>Aerin Brown is an incoming second-year Software Engineering student at McGill University, and attends as a Schulich Leader Scholar. She began programming at twelve years old to follow her blossoming passion in robotics, artificial intelligence, and game design. Now, she is part of the McGill Robotics team and works on inverse kinematics and pathfinding algorithms for their Mars rover project. She also is an active member of the McGill Game Development club and the McGill Artificial Intelligence Society. She has participated in two hackathons: MAISHacks, in which her team won Best Beginner Project, and McGameJam. In the future, she hopes to continue exploring various areas of Software Engineering through internships and freelance projects.</p>
         </div>
-        <h1>{{ title }}</h1>
+        <img src="./static/img/aerin.jpg" alt="Aerin Brown">
     </div>
 
-    <div class="about-us section" id="about">
-      <! -- About Us Section -->
-        <h2><u>About Me</u></h2>
-        {% for person in about_us %}
-            <p>{{person.text}}</p>
-        {% endfor %}
-    </div>
+    <hr>
   
   <div class="education-section">  
-    <!-- Education Section -->
     <div class="education-section section" id="education">
         <h2><u>Education</u></h2>
         
