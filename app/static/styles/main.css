@@ -224,7 +224,7 @@ body {
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 2%;
-    background-color: #dbdfe7;
+    background-color: #edfcfc;
     column-gap: 10px;
 }
 
@@ -547,6 +547,13 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     margin-top: 0px;
     padding-top: 0px;
     font-style: italic;
+}
+
+.education-section h2 {
+    color: #32c2c9;
+    font-size: 2.5em;
+    text-align: center;
+    text-underline-offset: 0.15em;
 }
 
 /* Media Queries */
