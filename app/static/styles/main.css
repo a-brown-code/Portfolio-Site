@@ -468,8 +468,8 @@ body {
 }
 
 .hobby img {
-    height: 300px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
 }
 
@@ -508,6 +508,12 @@ form {
     grid-row: 3;
     justify-items: left;
     height: 30px;
+    color:#312b40;
+    background-color: #edfcfc;
+
+    &:hover {
+        background-color:#32c2c9;
+    }
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
