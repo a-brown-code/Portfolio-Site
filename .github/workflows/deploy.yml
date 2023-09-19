@@ -31,7 +31,7 @@ jobs:
           SSH_IP: ${{ secrets.SSH_IP }}
 
       - name: Deploy Site
-        run: ssh my-vps 'cd ${{ secrets.PROJECT_ROOT }} && chmod +x redeploy-site.sh && ./redeploy-site.sh && docker compose ps'
+        run: ssh my-vps 'cd ${{ secrets.PROJECT_ROOT }} && chmod +x redeploy-site.sh && ./redeploy-site.sh && sudo docker compose ps'
         
       - name: Notify Discord
         run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
