@@ -28,9 +28,33 @@
         <div class="nav-content">
             <a href="/">
                 <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
+                    <img src="./static/img/logo.jpg" />
                 </div>
             </a>
+            <a href="https://github.com/aerin-brown-codes">
+                <div class="nav-external">
+                    <img src="./static/img/github.jpg" />
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/aerinbrown712/">
+                <div class="nav-external">
+                    <img src="./static/img/linkedin.jpg" />
+                </div>
+            </a>
+            <div class="nav-icon" onclick="toggleNav()">
+                <i class="fas fa-bars" id="icon"></i>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="toggle-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Experience</a></li>
+                    <li><a href="/hobbies">Hobbies</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="/timeline">Messages</a></li>
+                </ul>
+            </nav>
         </div>
         <script defer src="{{ url_for('static', filename='scripts/navmenu.js') }}"></script> 
     </header>

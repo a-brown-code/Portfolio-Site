@@ -1,15 +1,15 @@
 {
     "work" : [
         {
-            "holder": "Aerin",
-            "photo": "logo.svg",
+            "holder": "Tech",
+            "photo": "mlh.jpg",
             "position": "Site Reliability Engineering Fellow",
             "company": "Major League Hacking",
             "dates": "June 19 - Sept 8",
             "description": "The Site Reliability Engineering Program is an opportunity to learn how to be a great Site Reliability Engineer by completing an interactive curriculum getting you hands on experience with the tools used by thousands of companies around the world."
         }, 
         {
-            "holder": "Aerin",
+            "holder": "Tech",
             "photo": "mcgill-robotics.jpg",
             "position": "Software Programmer",
             "company": "McGill Robotics Team",
@@ -18,5 +18,5 @@
         }
     ],
 
-    "fellows" : ["Aerin"]
+    "fellows" : ["Tech"]
 }
