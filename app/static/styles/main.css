@@ -5,15 +5,23 @@ Dark - #312b40
 Light - #edfcfc 
 */
 
-p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
+p, h1, h3, h4, h5, h6, button {
+    font-family: "Lucida Console", "Courier New", monospace;
     margin-right: 10px;
     margin-left: 15px;
     color: #edfcfc;
+    line-height: 1.5em;
+}
+
+h2 {
+    color: #32c2c9;
+    font-size: 40px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 1.5em;
 }
 
 textarea {  
-    font-family: "Roboto", serif;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 html {
@@ -25,15 +33,23 @@ body {
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
-    font-family: "Roboto", serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     margin: 0px;
+}
+
+hr {
+    border: 0;
+    border-top: 5px solid #32c2c9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:#32c2c9;
 }
 
 .nav-bar {
     width: 100%;
     display: inline-block;
     background-color: #32c2c9;
-    font-family: "Roboto", serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     font-weight: 700 !important;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -145,70 +161,25 @@ body {
     padding-top: 70px;
 }
 
-.profile {
-    background-color: #32c2c9 !important;
-    text-align: center;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.profile h1 {
-    font-size: 3em;
-    font-weight: 700;
-    color: #edfcfc;
-    margin-bottom: 0px;
-}
-
-.profile img {
-    width: 12em;
-    height: 12em;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-.profile .profile-picture {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.banner {
-    padding: 20px 0px 50px 0px;
-    height: 150px;
-    background-color: #32c2c9;
-}
-
-.banner .logo {
-    max-width:180px;
-    max-height:60px;
-    width: auto;
-    height: auto;
-}
-
-.banner .title {
-    color: #edfcfc;
-    font-size: 50px;
-    font-weight: 700;
-}
-
 .about-us {
     padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about-us h2 {
+.about-us img {
+    max-width: 20%;
+    flex-basis: 10%;
+    margin: 1em;
+    border: 5px solid #32c2c9;
+}
+
+.about-us .text h2 {
     margin-right: 10px;
     margin-left: 15px;
-    color: #32c2c9;
-    font-size: 40px;
-    text-align: center;
-    text-underline-offset: 5px;
     margin-top: 0px;
     padding-top:0px;
-}
-
-.about-us h3 {
-    font-size: 30px;
 }
 
 .work .work-experience.inactive {
